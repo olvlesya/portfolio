@@ -1,11 +1,104 @@
-body {
+@font-face {
+  font-family: "Enriqueta-Regular";
+  src: url("./fonts/Enriqueta-Regular.ttf");
 }
-
 img {
   width: 100%;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 50px;
+  color: #ffff;
+  letter-spacing: 3px;
+  font-family: "Enriqueta-Regular";
+  display: block;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.section-background {
+  position: relative;
+}
+
+.section-background::before {
+  content: "";
+  background-image: url("./images/background.jpg");
+  height: 100%;
+  z-index: -1;
+  position: absolute;
+  opacity: 0.8;
+  width: 100%;
+  background-size: cover;
+}
+
 .about-me {
+  display: flex;
+  align-items: center;
+  background-color: #000000dd;
+
   &__banner {
+    width: 50%;
+    text-align: center;
+
+    img {
+      width: auto;
+      max-width: 100%;
+      max-height: 100vh;
+    }
+  }
+  &__brand {
+    font-family: "Calisto-MT";
+    margin-left: 60px;
+
+    &__text-up {
+      display: block;
+    }
+    &__text-down {
+      margin-bottom: 20px;
+      padding-left: 27%;
+    }
+
+    span {
+      font-size: 14px;
+      color: #c18f59;
+    }
+    p {
+      margin-bottom: 42px;
+      color: #777;
+      display: block;
+    }
+  }
+  &__read-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 11px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #c28a4e;
+    border: 1px solid #fff;
+    transition: color 0.3s;
+    text-align: center;
+    background-color: transparent;
+
+    &:hover {
+      color: #777;
+      background-position: right center;
+
+      background-color: rgb(181, 185, 184);
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.biography-my {
+  &__banner {
+    width: 40%;
   }
 }
