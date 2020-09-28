@@ -5,6 +5,10 @@
 img {
   width: 100%;
 }
+html {
+  font-size: 18px;
+  font-family: "Calisto-MT";
+}
 
 * {
   margin: 0;
@@ -12,7 +16,7 @@ img {
 }
 
 h2 {
-  font-size: 50px;
+  font-size: 3rem;
   color: #ffff;
   letter-spacing: 3px;
   font-family: "Enriqueta-Regular";
@@ -23,17 +27,17 @@ h2 {
 
 .section-background {
   position: relative;
-}
 
-.section-background::before {
-  content: "";
-  background-image: url("./images/background.jpg");
-  height: 100%;
-  z-index: -1;
-  position: absolute;
-  opacity: 0.8;
-  width: 100%;
-  background-size: cover;
+  &::before {
+    content: "";
+    background-image: url("./images/background.jpg");
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    opacity: 0.8;
+    width: 100%;
+    background-size: cover;
+  }
 }
 
 .about-me {
@@ -50,21 +54,19 @@ h2 {
       max-width: 100%;
       max-height: 100vh;
     }
-  }
-  &__brand {
-    font-family: "Calisto-MT";
-    margin-left: 60px;
-
-    &__text-up {
+    &__brand-top {
       display: block;
     }
-    &__text-down {
+    &__brand-bottom {
       margin-bottom: 20px;
       padding-left: 27%;
     }
+  }
+  &__brand {
+    margin-left: 60px;
 
     span {
-      font-size: 14px;
+      font-size: 0.8rem;
       color: #c18f59;
     }
     p {
@@ -73,32 +75,29 @@ h2 {
       display: block;
     }
   }
-  &__read-button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 11px;
-    text-transform: uppercase;
-    cursor: pointer;
-    color: #c28a4e;
-    border: 1px solid #fff;
-    transition: color 0.3s;
-    text-align: center;
-    background-color: transparent;
-
-    &:hover {
-      color: #777;
-      background-position: right center;
-
-      background-color: rgb(181, 185, 184);
-    }
-    &:focus {
-      outline: none;
-    }
-  }
 }
 
 .biography-my {
   &__banner {
     width: 40%;
+  }
+}
+
+.portfolio-button {
+  padding: 10px 20px;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #c28a4e;
+  border: 1px solid #fff;
+  transition: color 0.3s;
+  text-align: center;
+  background-color: transparent;
+
+  &:hover {
+    color: #777;
+  }
+  &:focus {
+    outline: none;
   }
 }
