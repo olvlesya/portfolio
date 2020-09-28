@@ -58,15 +58,15 @@ h2 {
       max-width: 100%;
       max-height: 100vh;
     }
-
-    &__brand-bottom {
-      margin-bottom: 20px;
-      padding-left: 27px;
-    }
   }
+
   &__brand {
     margin-left: 60px;
 
+    &-bottom {
+      margin-bottom: 20px;
+      padding-left: 27px;
+    }
     span {
       font-size: 0.8rem;
       color: #c18f59;
