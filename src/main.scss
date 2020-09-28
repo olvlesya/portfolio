@@ -1,11 +1,104 @@
-body {
+@font-face {
+  font-family: "CourierPrime-Regular";
+  src: url("./fonts/CourierPrime-Regular.ttf");
+}
+@font-face {
+  font-family: "Enriqueta-Regular";
+  src: url("./fonts/Enriqueta-Regular.ttf");
 }
 
 img {
   width: 100%;
 }
+html {
+  font-size: 18px;
+  font-family: "CourierPrime-Regular";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 3rem;
+  color: #fff;
+  letter-spacing: 3px;
+  font-family: "Enriqueta-Regular";
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.section-background {
+  position: relative;
+
+  &::before {
+    content: "";
+    background-image: url("./images/background.jpg");
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    opacity: 0.8;
+    width: 100%;
+    background-size: cover;
+  }
+}
 
 .about-me {
+  display: flex;
+  align-items: center;
+  background-color: #000000dd;
+
   &__banner {
+    width: 50%;
+    text-align: center;
+
+    img {
+      width: auto;
+      max-width: 100%;
+      max-height: 100vh;
+    }
+
+    &__brand-bottom {
+      margin-bottom: 20px;
+      padding-left: 27px;
+    }
+  }
+  &__brand {
+    margin-left: 60px;
+
+    span {
+      font-size: 0.8rem;
+      color: #c18f59;
+    }
+    p {
+      margin-bottom: 42px;
+      color: #777;
+    }
+  }
+}
+
+.biography-my {
+  &__banner {
+    width: 40%;
+  }
+}
+
+.portfolio-button {
+  padding: 10px 20px;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #c28a4e;
+  border: 1px solid #fff;
+  transition: color 0.3s;
+  text-align: center;
+  background-color: transparent;
+
+  &:hover {
+    color: #777;
+  }
+  &:focus {
+    outline: none;
   }
 }
