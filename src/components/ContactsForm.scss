@@ -1,0 +1,40 @@
+.footer {
+  background-color: #343434;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  p {
+    color: #c18f59;
+  }
+
+  &-container {
+    display: flex;
+    display: table-column;
+
+    .fab {
+      color: #fff;
+      margin-left: 20px;
+      display: inline-block;
+      font-size: 30px;
+      width: 30px;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+  &-button {
+    color: #fff;
+    background-color: #c18f59;
+    padding: 10px 20px;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 1px solid #fff;
+    transition: color 0.3s;
+    text-align: center;
+    background-color: transparent;
+  }
+}

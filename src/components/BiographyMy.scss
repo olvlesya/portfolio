@@ -1,0 +1,16 @@
+.biography-my {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  background-color: #343434;
+
+  &__banner {
+    width: 50%;
+    text-align: center;
+  }
+
+  &__story {
+    text-align: left;
+    color: #c18f59;
+  }
+}

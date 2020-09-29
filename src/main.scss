@@ -28,6 +28,11 @@ h2 {
   font-weight: 700;
   margin-bottom: 10px;
 }
+h3 {
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+}
 
 .section-background {
   position: relative;
@@ -75,12 +80,6 @@ h2 {
       margin-bottom: 42px;
       color: #777;
     }
-  }
-}
-
-.biography-my {
-  &__banner {
-    width: 40%;
   }
 }
 
