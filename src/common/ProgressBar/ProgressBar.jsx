@@ -3,8 +3,8 @@ import "./ProgressBar.scss";
 
 export function ProgressBar({ label, percent }) {
   return (
-    <div>
-      <div className="progress">
+    <div className="progress">
+      <div className="progress__labels">
         <p>{label}</p>
         <p>{percent}%</p>
       </div>

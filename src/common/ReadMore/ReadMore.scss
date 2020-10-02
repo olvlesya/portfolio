@@ -1,0 +1,8 @@
+.read-more {
+  &_open {
+  }
+  &_close {
+    overflow: hidden;
+    height: 50px;
+  }
+}

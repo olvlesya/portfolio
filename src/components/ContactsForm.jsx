@@ -5,17 +5,17 @@ export function ContactsForm() {
   return (
     <footer className="footer">
       <div className="footer-contacts">
-        <div>
+        <address>
           <p>Get In Touch</p>
           <div>Name: Olesia Nikonova </div>
           <div>Profile: Frontend developer</div>
-          <address>
+          <div>
             <a href="mailto:leyonoknou@gmail.com">
               Email: leyonoknou@gmail.com{" "}
             </a>
-          </address>
+          </div>
           <div>Phone:(+48)535430288</div>
-        </div>
+        </address>
       </div>
       <div className="footer-container">
         <p>FollowMe</p>
@@ -43,7 +43,7 @@ export function ContactsForm() {
           </div>
           <textarea></textarea>
         </div>
-        <button className="footer-button">submit</button>
+        <button className="portfolio-button">submit</button>
       </form>
     </footer>
   );

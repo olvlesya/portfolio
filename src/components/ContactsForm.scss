@@ -1,10 +1,23 @@
 .footer {
-  background-color: #343434;
   display: flex;
   justify-content: space-between;
   color: #fff;
   width: 100%;
   text-align: center;
+
+  address {
+    text-align: left;
+    margin-left: 40px;
+    text-decoration: none;
+    & a {
+      text-decoration: none;
+      color: #fff;
+    }
+    & a:hover {
+      text-decoration: underline;
+    }
+  }
+
   p {
     color: #c18f59;
   }
@@ -25,16 +38,9 @@
       }
     }
   }
-  &-button {
-    color: #fff;
-    background-color: #c18f59;
-    padding: 10px 20px;
-    font-size: 0.6rem;
-    text-transform: uppercase;
-    cursor: pointer;
-    border: 1px solid #fff;
-    transition: color 0.3s;
-    text-align: center;
-    background-color: transparent;
+  &-form {
+    .portfolio-button {
+      color: #fff;
+    }
   }
 }
