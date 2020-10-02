@@ -1,0 +1,46 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+
+  address {
+    text-align: left;
+    margin-left: 40px;
+    text-decoration: none;
+    & a {
+      text-decoration: none;
+      color: #fff;
+    }
+    & a:hover {
+      text-decoration: underline;
+    }
+  }
+
+  p {
+    color: #c18f59;
+  }
+
+  &-container {
+    display: flex;
+    display: table-column;
+
+    .fab {
+      color: #fff;
+      margin-left: 20px;
+      display: inline-block;
+      font-size: 30px;
+      width: 30px;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+  &-form {
+    .portfolio-button {
+      color: #fff;
+    }
+  }
+}
