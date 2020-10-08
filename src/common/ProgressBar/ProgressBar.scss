@@ -1,24 +1,11 @@
-$bar-bg-color: #cde1f8;
+$bar-bg-color: #1b65b9;
 
 .progress {
-  &__labels {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
+  display: flex;
+  justify-content: space-between;
+  color: darken($bar-bg-color, 30%);
 
-  & p {
-    color: #fff;
-  }
-
-  &-bar {
-    background-color: $bar-bg-color;
-    transition: width 0.6s ease;
-    height: 10px;
-
-    &__scale {
-      background-color: darken($bar-bg-color, 50%);
-      height: 100%;
-    }
+  &__stars {
+    color: $bar-bg-color;
   }
 }

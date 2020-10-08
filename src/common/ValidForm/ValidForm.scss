@@ -1,0 +1,28 @@
+.form-input {
+  &_incorrect {
+    border: 1px solid #c52929;
+  }
+  &_correct {
+    background-color: #282828;
+  }
+}
+
+input {
+  width: 400px;
+  padding: 20px;
+  border: 1px solid #404040;
+  background-color: #282828;
+  color: #fff;
+}
+
+textarea {
+  box-sizing: border-box;
+  height: 90px;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #404040;
+  background-color: #282828;
+  resize: none;
+  color: #fff;
+}

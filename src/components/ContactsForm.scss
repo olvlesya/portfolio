@@ -22,9 +22,12 @@
     color: #c18f59;
   }
 
+  &-icons p {
+    margin-bottom: 20px;
+  }
+
   &-container {
     display: flex;
-    display: table-column;
 
     .fab {
       color: #fff;
@@ -41,6 +44,12 @@
   &-form {
     .portfolio-button {
       color: #fff;
+    }
+    &-date {
+      margin-bottom: 20px;
+    }
+    &-contacts {
+      margin-right: 40px;
     }
   }
 }
