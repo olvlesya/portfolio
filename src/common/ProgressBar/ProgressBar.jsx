@@ -1,19 +1,12 @@
 import React from "react";
 import "./ProgressBar.scss";
 
-export function ProgressBar({ label, percent }) {
+export function ProgressBar({ label, stars }) {
+  const starsSkills = new Array(stars).fill(<i class="fas fa-star"></i>);
   return (
     <div className="progress">
-      <div className="progress__labels">
-        <p>{label}</p>
-        <p>{percent}%</p>
-      </div>
-      <div className="progress-bar">
-        <div
-          className="progress-bar__scale"
-          style={{ width: `${percent}%` }}
-        ></div>
-      </div>
+      <div>{label}</div>
+      <div className="progress__stars">{starsSkills}</div>
     </div>
   );
 }

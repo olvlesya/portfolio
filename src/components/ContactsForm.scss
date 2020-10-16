@@ -1,34 +1,42 @@
+@import "../variables.scss";
+
 .footer {
   display: flex;
   justify-content: space-between;
-  color: #fff;
+  color: $color-main;
   width: 100%;
   text-align: center;
+  padding: 0 40px;
+  box-sizing: border-box;
 
-  address {
+  & address {
     text-align: left;
-    margin-left: 40px;
     text-decoration: none;
-    & a {
+    margin-bottom: 40px;
+
+    a {
       text-decoration: none;
-      color: #fff;
+      color: $color-main;
     }
-    & a:hover {
+    a:hover {
       text-decoration: underline;
     }
   }
 
   p {
-    color: #c18f59;
+    color: $color-theme;
   }
 
-  &-container {
+  &__icons p {
+    margin-bottom: 20px;
+  }
+
+  &__social {
     display: flex;
-    display: table-column;
 
     .fab {
-      color: #fff;
-      margin-left: 20px;
+      color: $color-main;
+      margin-right: 20px;
       display: inline-block;
       font-size: 30px;
       width: 30px;
@@ -38,9 +46,20 @@
       }
     }
   }
-  &-form {
-    .portfolio-button {
-      color: #fff;
+  &-bottom {
+    padding: 25px 0;
+    background-color: #2d2d2d;
+
+    &__inner {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto;
+
+      p {
+        color: #777;
+        font-size: 1rem;
+        margin-left: 40px;
+      }
     }
   }
 }

@@ -12,16 +12,16 @@ export function AboutMe() {
         <div className="about-me__brand">
           <div>
             <span>Hello! I'm</span>
-            <h2>Olesia</h2>
+            <h1>Olesia</h1>
           </div>
           <div className="about-me__brand-bottom">
-            <h2>Nikonova</h2>
+            <h1>Nikonova</h1>
             <span>Frontend Developer</span>
           </div>
 
           <p>Do Better Do More</p>
 
-          <button className="portfolio-button">READ BIO</button>
+          <button className="portfolio-button">ABOUT ME</button>
         </div>
       </section>
     </div>

@@ -1,0 +1,34 @@
+.footer-form {
+  width: 30%;
+
+  &__input,
+  &__textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #404040;
+    background-color: #282828;
+    color: #fff;
+
+    &:focus {
+      outline: none;
+      border: 1px solid #fff;
+    }
+
+    &_incorrect {
+      border: 1px solid #c52929;
+    }
+    &_correct {
+      background-color: #282828;
+    }
+  }
+
+  &__textarea {
+    height: 90px;
+    resize: none;
+  }
+
+  &__contacts {
+    margin-bottom: 20px;
+  }
+}
