@@ -14,17 +14,17 @@
     text-decoration: none;
     margin-bottom: 40px;
 
-    & a {
+    a {
       text-decoration: none;
       color: $color-main;
     }
-    & a:hover {
+    a:hover {
       text-decoration: underline;
     }
   }
 
   p {
-    color: $color-team;
+    color: $color-theme;
   }
 
   &__icons p {
@@ -55,7 +55,7 @@
       justify-content: space-between;
       margin: 0 auto;
 
-      & P {
+      p {
         color: #777;
         font-size: 1rem;
         margin-left: 40px;

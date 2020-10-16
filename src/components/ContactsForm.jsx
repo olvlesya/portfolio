@@ -12,8 +12,8 @@ export function ContactsForm() {
             <div> Name: Olesia Nikonova </div>
             <div> Profile: Frontend developer </div>
             <div>
-              <a href="mailto:leyonoknou@gmail.com">
-                Email: leyonoknou@gmail.com{" "}
+              <a href="mailto:lesyonoknou@gmail.com">
+                Email: lesyonoknou@gmail.com{" "}
               </a>
             </div>
             <div> Phone: (+48)535430288 </div>
