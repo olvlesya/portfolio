@@ -1,6 +1,6 @@
 import React from "react";
 import { ProgressBar } from "../common/ProgressBar";
-import { ReadMore } from "../common/ReadMore";
+
 import "./BiographyMy.scss";
 import biographyMyBanner from "../images/biography-my__banner.jpg";
 
@@ -20,22 +20,22 @@ const skills = [
 export function BiographyMy() {
   return (
     <section className="biography-my ">
-      <article className="biography-my-wrapper">
+      <div className="biography-my__wrapper">
         <div className="biography-my__banner">
           <img alt="about me profile" src={biographyMyBanner} />
 
           <div className="biography-my__skill">
-            <h4>My skills</h4>
+            <h3>My skills</h3>
             {skills.map(({ label, stars }) => (
               <ProgressBar label={label} stars={stars} />
             ))}
           </div>
         </div>
-      </article>
+      </div>
       <div className="biography-my__story">
-        <h4>About me</h4>
+        <h3>About me</h3>
 
-        <ReadMore>
+        <div className="biography-my__text">
           After I graduated from University, I knew exactly what I wanted. I
           always liked the web, I even had a favorite book that I always carried
           with me everywhere and read. Indeed, after graduating from University
@@ -50,11 +50,11 @@ export function BiographyMy() {
           everything works out, you feel very satisfied. Sometimes you think
           about a task and can't sleep. Remembering how cool it is to return to
           tasks, even though you have grown up. It's like going back to school
-          to my own.It's like going back to school to my favorite algebra. I
+          to my own. It's like going back to school to my favorite algebra. I
           have yet to learn this fascinating world of programming.
-        </ReadMore>
+        </div>
       </div>
-      <div className="biography-my-background"></div>
+      <div className="biography-my__background"></div>
     </section>
   );
 }

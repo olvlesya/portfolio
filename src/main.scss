@@ -1,3 +1,5 @@
+@import "./variables.scss";
+
 @font-face {
   font-family: "CourierPrime-Regular";
   src: url("./fonts/CourierPrime-Regular.ttf");
@@ -5,6 +7,10 @@
 @font-face {
   font-family: "Enriqueta-Regular";
   src: url("./fonts/Enriqueta-Regular.ttf");
+}
+@font-face {
+  font-family: "Calistoga-Regular";
+  src: url("./fonts/Calistoga-Regular.ttf");
 }
 
 img {
@@ -23,31 +29,31 @@ body {
   background-color: #343434;
 }
 
-h2 {
+h1 {
   font-size: 3rem;
-  color: #fff;
+  color: $color-main;
   letter-spacing: 3px;
   font-family: "Enriqueta-Regular";
   font-weight: 700;
   margin-bottom: 10px;
 }
-h3 {
+h2 {
   font-size: 2rem;
-  color: #fff;
+  color: $color-main;
+  text-align: center;
+  margin-bottom: 40px;
+}
+h3 {
+  font-size: 1.8rem;
+  color: $color-theme;
   text-align: center;
   margin-bottom: 40px;
 }
 h4 {
-  font-size: 1.8rem;
-  color: #c18f59;
-  text-align: center;
-  margin-bottom: 40px;
-}
-h5 {
   margin-bottom: 30px;
-  font-size: 20px;
+  font-size: 1.2rem;
   letter-spacing: 2px;
-  color: #c18f59;
+  color: $color-theme;
 }
 .section-background {
   position: relative;
@@ -88,12 +94,15 @@ h5 {
       padding-left: 27px;
     }
     span {
-      font-size: 0.8rem;
-      color: #c18f59;
+      font-size: 1rem;
+      color: $color-theme;
+      font-family: "Calistoga-Regular";
+      letter-spacing: 1px;
     }
     p {
       margin-bottom: 42px;
       color: #777;
+      font-size: 2rem;
     }
   }
 }
@@ -104,7 +113,7 @@ h5 {
   text-transform: uppercase;
   cursor: pointer;
   color: #c28a4e;
-  border: 1px solid #fff;
+  border: 1px solid $color-main;
   transition: color 0.3s;
   text-align: center;
   background-color: transparent;

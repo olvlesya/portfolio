@@ -2,17 +2,7 @@ import React, { useState } from "react";
 import "./ValidForm.scss";
 
 function validateEmail(email) {
-  if (email === "") {
-    return true;
-  }
-  if (email.length < 3) {
-    return false;
-  }
-  if (!email.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i)) {
-    return false;
-  }
-
-  return true;
+  return email === "" || email.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i);
 }
 
 export function ValidForm(props) {
@@ -21,22 +11,23 @@ export function ValidForm(props) {
 
   return (
     <form className="footer-form" name="test" method="post" action="#">
-      <div className="footer-form-contacts">
-        <h5>Contact Form</h5>
-        <div className="footer-form-name">
+      <div className="footer-form__contacts">
+        <h4>Contact Form</h4>
+        <div>
           <input
+            className="footer-form__input"
             value={value}
             onChange={(e) => setValue(e.target.value)}
             placeholder="name*"
             required
           />
         </div>
-        <div className="footer-form-email">
+        <div>
           <input
             className={
               validateEmail(email)
-                ? "form-input_correct"
-                : "form-input_incorrect"
+                ? "footer-form__input footer-form__input_correct"
+                : "footer-form__input footer-form__input_incorrect"
             }
             type="email"
             value={email}
@@ -45,12 +36,12 @@ export function ValidForm(props) {
             required
           />
         </div>
-        <div className="footer-form-date">
-          <input placeholder="date*" required />
+        <div>
+          <textarea className="footer-form__textarea"></textarea>
         </div>
-        <textarea></textarea>
+
+        <button className="portfolio-button">submit</button>
       </div>
-      <button className="portfolio-button">submit</button>
     </form>
   );
 }
