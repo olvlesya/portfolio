@@ -13,6 +13,11 @@
   src: url("./fonts/Calistoga-Regular.ttf");
 }
 
+@font-face {
+  font-family: "Courgette-Regular";
+  src: url("./fonts/Courgette-Regular.ttf");
+}
+
 img {
   width: 100%;
 }
@@ -67,43 +72,6 @@ h4 {
     opacity: 0.8;
     width: 100%;
     background-size: cover;
-  }
-}
-
-.about-me {
-  display: flex;
-  align-items: center;
-  background-color: #000000dd;
-
-  &__banner {
-    width: 50%;
-    text-align: center;
-
-    img {
-      width: auto;
-      max-width: 100%;
-      max-height: 100vh;
-    }
-  }
-
-  &__brand {
-    margin-left: 60px;
-
-    &-bottom {
-      margin-bottom: 20px;
-      padding-left: 27px;
-    }
-    span {
-      font-size: 1rem;
-      color: $color-theme;
-      font-family: "Calistoga-Regular";
-      letter-spacing: 1px;
-    }
-    p {
-      margin-bottom: 42px;
-      color: #777;
-      font-size: 2rem;
-    }
   }
 }
 

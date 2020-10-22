@@ -1,4 +1,5 @@
 import React from "react";
+import "./AboutMe.scss";
 import aboutMePicture from "../images/banner__about-me.jpg";
 
 export function AboutMe() {
@@ -11,7 +12,7 @@ export function AboutMe() {
 
         <div className="about-me__brand">
           <div>
-            <span>Hello! I'm</span>
+            <span>It's me</span>
             <h1>Olesia</h1>
           </div>
           <div className="about-me__brand-bottom">
@@ -21,7 +22,9 @@ export function AboutMe() {
 
           <p>Do Better Do More</p>
 
-          <button className="portfolio-button">ABOUT ME</button>
+          <a href="#aboutme">
+            <button className="portfolio-button">ABOUT ME</button>
+          </a>
         </div>
       </section>
     </div>

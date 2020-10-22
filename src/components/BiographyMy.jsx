@@ -32,7 +32,7 @@ export function BiographyMy() {
           </div>
         </div>
       </div>
-      <div className="biography-my__story">
+      <div id="aboutme" className="biography-my__story">
         <h3>About me</h3>
 
         <div className="biography-my__text">

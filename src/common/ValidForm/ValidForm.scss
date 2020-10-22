@@ -1,5 +1,11 @@
 .footer-form {
-  width: 30%;
+  width: 600px;
+  @media (max-width: 992px) {
+    margin-left: 0;
+    width: auto;
+    padding: 0 50px;
+    box-sizing: border-box;
+  }
 
   &__input,
   &__textarea {

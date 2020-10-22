@@ -1,0 +1,39 @@
+@import "../variables.scss";
+
+.about-me {
+  display: flex;
+  align-items: center;
+  background-color: #000000dd;
+
+  &__banner {
+    width: 50%;
+    min-width: 400px;
+    text-align: center;
+
+    img {
+      width: auto;
+      max-width: 100%;
+      max-height: 100vh;
+    }
+  }
+  &__brand {
+    margin-left: 60px;
+
+    span {
+      font-size: 1rem;
+      color: $color-theme;
+      font-family: "Calistoga-Regular";
+      letter-spacing: 1px;
+      padding-left: 27px;
+    }
+    &-bottom {
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-bottom: 42px;
+      color: #777;
+      font-size: 2rem;
+    }
+  }
+}
