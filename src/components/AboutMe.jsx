@@ -1,14 +1,11 @@
 import React from "react";
 import "./AboutMe.scss";
-import aboutMePicture from "../images/banner__about-me.jpg";
 
 export function AboutMe() {
   return (
     <div className="section-background">
       <section className="about-me">
-        <div className="about-me__banner">
-          <img alt="" src={aboutMePicture} />
-        </div>
+        <div className="about-me__banner" />
 
         <div className="about-me__brand">
           <div>
