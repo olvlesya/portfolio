@@ -1,0 +1,47 @@
+@import "../variables.scss";
+
+.about-me {
+  display: flex;
+  align-items: center;
+  background-color: #000000dd;
+
+  @media (max-width: $tablet-breakpoint) {
+    padding: 20px;
+  }
+
+  &__banner {
+    width: 50%;
+    min-width: 400px;
+    text-align: center;
+    height: 100vh;
+    display: none;
+
+    @media (min-width: $tablet-breakpoint) {
+      display: block;
+      background-image: url(../images/banner__about-me.jpg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position-y: center;
+    }
+  }
+  &__brand {
+    margin-left: 60px;
+
+    span {
+      font-size: 1rem;
+      color: $color-theme;
+      font-family: "Calistoga-Regular";
+      letter-spacing: 1px;
+      padding-left: 27px;
+    }
+    &-bottom {
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-bottom: 42px;
+      color: #777;
+      font-size: 2rem;
+    }
+  }
+}

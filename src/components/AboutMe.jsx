@@ -1,17 +1,15 @@
 import React from "react";
-import aboutMePicture from "../images/banner__about-me.jpg";
+import "./AboutMe.scss";
 
 export function AboutMe() {
   return (
     <div className="section-background">
       <section className="about-me">
-        <div className="about-me__banner">
-          <img alt="" src={aboutMePicture} />
-        </div>
+        <div className="about-me__banner" />
 
         <div className="about-me__brand">
           <div>
-            <span>Hello! I'm</span>
+            <span>It's me</span>
             <h1>Olesia</h1>
           </div>
           <div className="about-me__brand-bottom">
@@ -21,7 +19,9 @@ export function AboutMe() {
 
           <p>Do Better Do More</p>
 
-          <button className="portfolio-button">ABOUT ME</button>
+          <a href="#aboutme">
+            <button className="portfolio-button">ABOUT ME</button>
+          </a>
         </div>
       </section>
     </div>
