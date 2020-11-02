@@ -6,9 +6,11 @@ export function ReadMore({ children }) {
   return (
     <div>
       <div className={status ? "" : "read-more_hidden"}>{children}</div>
-      <button onClick={() => setOpen(!status)} className="portfolio-button">
-        ReadMore
-      </button>
+      {!status && (
+        <button onClick={() => setOpen(!status)} className="portfolio-button">
+          ReadMore
+        </button>
+      )}
     </div>
   );
 }

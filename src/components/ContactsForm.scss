@@ -9,9 +9,6 @@
   padding: 0 40px;
   box-sizing: border-box;
 
-  @media (max-width: $tablet-breakpoint) {
-  }
-
   @media (max-width: $desktop-breakpoint) {
     flex-direction: column;
   }

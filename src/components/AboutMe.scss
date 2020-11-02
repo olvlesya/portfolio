@@ -16,7 +16,7 @@
     height: 100vh;
     display: none;
 
-    @media (min-width: 769px) {
+    @media (min-width: $tablet-breakpoint) {
       display: block;
       background-image: url(../images/banner__about-me.jpg);
       background-size: contain;
