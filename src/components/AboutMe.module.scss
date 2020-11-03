@@ -1,6 +1,6 @@
 @import "../variables.scss";
 
-.about-me {
+.aboutMe {
   display: flex;
   align-items: center;
   background-color: #000000dd;
@@ -9,7 +9,7 @@
     padding: 20px;
   }
 
-  &__banner {
+  &Banner {
     width: 50%;
     min-width: 400px;
     text-align: center;
@@ -24,7 +24,7 @@
       background-position-y: center;
     }
   }
-  &__brand {
+  &Brand {
     margin-left: 60px;
 
     span {
@@ -34,7 +34,7 @@
       letter-spacing: 1px;
       padding-left: 27px;
     }
-    &-bottom {
+    &Bottom {
       margin-bottom: 20px;
     }
 

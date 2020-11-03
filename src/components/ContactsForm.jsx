@@ -1,12 +1,18 @@
 import React from "react";
 import { ValidForm } from "../common/ValidForm";
-import "./ContactsForm.scss";
+import {
+  footer,
+  footerContacts,
+  footerSocial,
+  footerBottom,
+  footerBottomInner,
+} from "./ContactsForm.module.scss";
 
 export function ContactsForm() {
   return (
     <footer>
-      <section className="footer">
-        <div className="footer__contacts">
+      <section className={footer}>
+        <div className={footerContacts}>
           <address>
             <h4>Get In Touch</h4>
             <div> Name: Olesia Nikonova </div>
@@ -19,8 +25,8 @@ export function ContactsForm() {
             <div> Phone: (+48)535430288 </div>
           </address>
 
-          <div className="footer__social">
-            <div className="footer__icons">
+          <div className={footerSocial}>
+            <div>
               <a href="https://www.facebook.com/profile.php?id=100001696638681">
                 <i className="fab fa-facebook"></i>
               </a>
@@ -39,8 +45,8 @@ export function ContactsForm() {
         <ValidForm />
       </section>
 
-      <div className="footer-bottom">
-        <div className="footer-bottom__inner">
+      <div className={footerBottom}>
+        <div className={footerBottomInner}>
           <p>
             © 2020 Author & Design | Development <span>by Olesia Nikonova</span>
           </p>

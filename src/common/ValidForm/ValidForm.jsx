@@ -1,5 +1,12 @@
 import React, { useState } from "react";
-import "./ValidForm.scss";
+import {
+  footerForm,
+  footerFormContacts,
+  footerFormInput,
+  footerFormTextarea,
+  footerFormInputCorrect,
+  footeFormInputIncorrect,
+} from "./ValidForm.module.scss";
 
 function validateEmail(email) {
   return email === "" || email.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i);
@@ -10,12 +17,12 @@ export function ValidForm(props) {
   const [email, setEmail] = useState("");
 
   return (
-    <form className="footer-form" name="test" method="post" action="#">
-      <div className="footer-form__contacts">
+    <form className={footerForm} name="test" method="post" action="#">
+      <div className={footerFormContacts}>
         <h4>Contact Form</h4>
         <div>
           <input
-            className="footer-form__input"
+            className={footerFormInput}
             value={value}
             onChange={(e) => setValue(e.target.value)}
             placeholder="name*"
@@ -26,8 +33,8 @@ export function ValidForm(props) {
           <input
             className={
               validateEmail(email)
-                ? "footer-form__input footer-form__input_correct"
-                : "footer-form__input footer-form__input_incorrect"
+                ? [footerFormInput, footerFormInputCorrect].join(" ")
+                : [footerFormInput, footeFormInputIncorrect].join(" ")
             }
             type="email"
             value={email}
@@ -37,7 +44,7 @@ export function ValidForm(props) {
           />
         </div>
         <div>
-          <textarea className="footer-form__textarea"></textarea>
+          <textarea className={footerFormTextarea}></textarea>
         </div>
 
         <button className="portfolio-button">submit</button>
