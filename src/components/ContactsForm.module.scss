@@ -6,6 +6,7 @@
   align-items: center;
   padding: 25px 40px;
   background-color: #2d2d2d;
+  content-visibility: auto;
 
   @media (max-width: $tablet-breakpoint) {
     flex-direction: column;

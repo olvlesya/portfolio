@@ -9,6 +9,7 @@
   position: relative;
   align-items: flex-start;
   margin-bottom: 40px;
+  content-visibility: auto;
 
   @media (max-width: $desktop-breakpoint) {
     flex-direction: column;
