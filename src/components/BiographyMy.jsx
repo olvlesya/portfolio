@@ -9,6 +9,7 @@ import {
   biographyMySkill,
   biographyMyStory,
   biographyMyBackground,
+  biographyMyText,
 } from "./BiographyMy.module.scss";
 import myBanner from "../images/biography-my__banner.jpg";
 
@@ -16,7 +17,7 @@ const skills = [
   { label: "SCSS", stars: 4 },
   { label: "HTML", stars: 5 },
   { label: "JS", stars: 4 },
-  { label: "React", stars: 3 },
+  { label: "React", stars: 4 },
   { label: "Git", stars: 4 },
   { label: "Redux", stars: 2 },
   { label: "BEM", stars: 5 },
@@ -34,8 +35,8 @@ export function BiographyMy() {
 
           <div className={biographyMySkill}>
             <h3>My skills</h3>
-            {skills.map(({ label, stars }) => (
-              <ProgressBar label={label} stars={stars} />
+            {skills.map((skill, index) => (
+              <ProgressBar {...skill} key={index} />
             ))}
           </div>
         </div>
@@ -44,7 +45,7 @@ export function BiographyMy() {
         <h3>About me</h3>
 
         <ReadMore>
-          <div className="biography-my__text">
+          <div className={biographyMyText}>
             After I graduated from University, I knew exactly what I wanted. I
             always liked the web, I even had a favorite book that I always
             carried with me everywhere and read. Indeed, after graduating from
