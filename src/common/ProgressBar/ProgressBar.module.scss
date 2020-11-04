@@ -5,7 +5,7 @@ $bar-bg-color: #1b65b9;
   justify-content: space-between;
   color: darken($bar-bg-color, 30%);
 
-  &__stars {
+  &Stars {
     color: $bar-bg-color;
   }
 }

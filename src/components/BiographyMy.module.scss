@@ -1,6 +1,6 @@
 @import "../variables.scss";
 
-.biography-my {
+.biographyMy {
   display: flex;
   text-align: center;
   justify-content: space-between;
@@ -15,7 +15,7 @@
     width: 100%;
   }
 
-  &__background {
+  &Background {
     position: absolute;
     background-image: url("../images/biography-background.jpg");
     background-position: center;
@@ -38,7 +38,7 @@
     }
   }
 
-  &__wrapper {
+  &Wrapper {
     width: 390px;
     padding: 8px;
     text-align: center;
@@ -52,11 +52,11 @@
     }
   }
 
-  &__banner {
+  &Banner {
     text-align: center;
   }
 
-  &__story {
+  &Story {
     text-align: left;
     color: $color-main;
     width: 50%;
@@ -69,10 +69,11 @@
     }
   }
 
-  &__skill {
+  &Skill {
     margin: 0 auto;
-    padding: 35px 0 20px;
+    padding: 35px 10px 20px;
     background-color: #dad6d6;
+    box-sizing: border-box;
 
     @media (max-width: $desktop-breakpoint) {
       margin: 0 auto;
@@ -82,7 +83,7 @@
     }
   }
 
-  &__text::first-letter {
+  &Text::first-letter {
     font-size: 5rem;
     line-height: 4rem;
     color: $color-theme;

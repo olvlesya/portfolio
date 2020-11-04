@@ -2,8 +2,15 @@ import React from "react";
 import { ReadMore } from "../common/ReadMore/ReadMore";
 import { ProgressBar } from "../common/ProgressBar";
 
-import "./BiographyMy.scss";
-import biographyMyBanner from "../images/biography-my__banner.jpg";
+import {
+  biographyMy,
+  biographyMyWrapper,
+  biographyMyBanner,
+  biographyMySkill,
+  biographyMyStory,
+  biographyMyBackground,
+} from "./BiographyMy.module.scss";
+import myBanner from "../images/biography-my__banner.jpg";
 
 const skills = [
   { label: "SCSS", stars: 4 },
@@ -20,12 +27,12 @@ const skills = [
 
 export function BiographyMy() {
   return (
-    <section className="biography-my ">
-      <div className="biography-my__wrapper">
-        <div className="biography-my__banner">
-          <img alt="about me profile" src={biographyMyBanner} />
+    <section className={biographyMy}>
+      <div className={biographyMyWrapper}>
+        <div className={biographyMyBanner}>
+          <img alt="about me profile" src={myBanner} />
 
-          <div className="biography-my__skill">
+          <div className={biographyMySkill}>
             <h3>My skills</h3>
             {skills.map(({ label, stars }) => (
               <ProgressBar label={label} stars={stars} />
@@ -33,7 +40,7 @@ export function BiographyMy() {
           </div>
         </div>
       </div>
-      <div id="aboutme" className="biography-my__story">
+      <div id="aboutme" className={biographyMyStory}>
         <h3>About me</h3>
 
         <ReadMore>
@@ -58,7 +65,7 @@ export function BiographyMy() {
           </div>
         </ReadMore>
       </div>
-      <div className="biography-my__background"></div>
+      <div className={biographyMyBackground}></div>
     </section>
   );
 }
